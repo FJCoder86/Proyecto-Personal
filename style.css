@@ -1,0 +1,164 @@
+html {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Img/background.jpg") ;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+header {
+    background-color: #364552;
+    color: white;
+    padding: 3rem 2rem;
+    height: 200px;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.desarrollador {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-menu {
+    float: right;
+    margin-right: 10px;
+    justify-content: right;
+    max-width: 800px;
+}
+
+.nav-menu a:hover, .nav-menu a:focus {
+    color: cornflowerblue;
+    background-color: rgba(100, 149, 237, 0.1);
+    border-radius: 60px;
+    padding: 5px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 05px;
+    display: inline-block;
+    font-size: 1.3em;
+    
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.caja-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+section article {
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+section article h2, section article p{
+margin: 1rem;
+}
+
+section a.aqui{
+    float: right;
+    display: block;
+    font-size: 18px;
+    justify-content: right;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 5rem;
+    transition: color 1s ease;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+section a:hover{
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+.ruta{
+    font-weight: bold;
+    color: #cc189f;
+}
+
+footer{
+    background-color: #364552;
+    padding: 3rem;
+    color: white;
+    height: 200px;
+}
+
+footer section{
+    float: right;
+}
+
+.desarrollador {
+    margin: 0;
+    text-align: center;
+}
+
+footer a{
+transition: color 0.3s ease;
+color: white;
+text-decoration: none;
+}
+
+.links-footer{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer a:hover{
+    color: cornflowerblue;
+    
+}
